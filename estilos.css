@@ -1,0 +1,77 @@
+:root {
+
+    --c_violeta500:  hsl(263, 55%, 52%);
+    --c_blue500: hsl(217, 19%, 35%);
+    --c_blue900: hsl(219, 29%, 14%);
+    --c_white:  hsl(0, 0%, 100%);
+
+
+    --c_gray800: hsl(0, 0%, 81%);
+    --c_gray200: hsl(210, 46%, 95%);
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Maven+Pro:wght@400..900&family=Silkscreen:wght@400;700&display=swap');
+body{
+   background-color: var(--c_gray200);
+    font-size: 13px;
+    font-family: "Barlow Semi Condensed", serif;
+    font-weight: 500;
+    font-style: normal;
+    
+}
+
+.first {
+    & .col-md-8{
+    background-color: var(--c_violeta500);
+    
+    }
+
+    & .col-md-3{
+    background-color: var(--c_blue500);
+    }
+}
+
+.secund {
+    & .col-md-3 {
+        background-color: var(--c_white);
+    }
+    & .col-md-8 {
+        background-color: var(--c_blue900);
+        color: var(--c_white);}
+    }
+
+
+
+
+.last {
+    background-color: white;
+}
+
+img{
+    margin-top: 13px;
+    border-radius: 50%;
+    width: 35px;
+    border: 3px solid hsl(263, 46%, 60%) ;
+}
+.name{
+    display: flex;
+    align-items: center;
+
+        & .fg { 
+            margin-left: 20px;
+} 
+}
+
+span{
+    font-size: 12px;
+    color: var(--c_gray800);
+}
+p{
+    font-size: 13px;
+    color: var(--c_gray800);
+    margin-top: 30px;
+}
+.card{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
